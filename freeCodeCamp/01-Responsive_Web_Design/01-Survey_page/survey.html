@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey practice</title>
+</head>
+<body>
+    <section>
+        <h1 id="title">Üdvözöllek kedves Lányom!</h1>
+        <p id="description">Ezt a kicsiny űrlapot neked készítettem, kérlek töltsd ki.</p>
+    </section>
+
+    <section>
+        <form id="survey-form" action="#" method="get"> <!-- IDE KELL MÉG EGY LINK -->
+            <fieldset>
+                <p>Alapadatok</p>
+                <label id="name-label" for="name"> Kérlek add meg a nevedet: <input id="name" type="text" placeholder="Vezetéknév Keresztnév" minlength="3" maxlength="64" required/></label>
+                <label id="email-label" for="email"> Kérlek add meg az email címed: <input id="email" type="email" placeholder="mintabela@mail.com" required/></label>
+                <label id="number-label" for="number"> Hány éves vagy: <input id="number" type="number" min="3"  max="100" placeholder="18" required/></label>
+            </fieldset>
+            <fieldset>
+                 <p>Mi a kedvenc mesekönyved? <select name="dropdown" id="dropdown">Mi a kedvenc mesekönyved?
+                    <option value="0"></option>
+                    <option value="1">Harry Potter</option>
+                    <option value="2">Boszorkány cica</option>
+                    <option value="3">Rémuszbácsi</option>
+                    <option value="4">Anna, Peti és Gergő</option>
+                </select></p>
+            </fieldset>
+            
+            <fieldset> 
+                <p>Szerinted melyik a legjobb tuljadonságod?</p>
+                <label><input type="radio" class="inline" name="personality" value="happy" checked> Vidám vagyok</label>
+                <label><input type="radio" class="inline" name="personality" value="funny" > Vicces vagyok</label>
+                <label><input type="radio" class="inline" name="personality" value="good-student"> Jó tanuló vagyok</label>
+                <label><input type="radio" class="inline" name="personality" value="good-friend"> Jó barát vagyok</label>
+            </fieldset>
+            
+            <fieldset>
+                <p>Mely tanrágyakat szereted? ( több opció is megjelölhető )</p>
+                <label><input type="checkbox" class="inline" value="mathematics">Matek</label>
+                <label><input type="checkbox" class="inline" value="read-write">Írás / olvasás</label>
+                <label><input type="checkbox" class="inline" value="english">Angol</label>
+                <label><input type="checkbox" class="inline" value="technics">Techinka</label>
+                <label><input type="checkbox" class="inline" value="sina-song">Ének</label>
+                <label><input type="checkbox" class="inline" value="sport">Tesi</label>
+            </fieldset>
+           
+            <fieldset>
+                <p>Írj nekem bármit! Csak bátran!</p>
+                <textarea name="" id="text-to-me" cols="60" rows="7" placeholder="Figyelem mily hangok hagyják el fogaid kapuját!"></textarea>
+            </fieldset>
+            <div ckass="button-holder">
+        <input id="submit" type="submit" value="Beküldés">
+            </div>
+        </form>
+    </section>
+
+
+</body>
+</html>

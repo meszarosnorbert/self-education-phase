@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CsakCashCamping</title>
+</head>
+<body>
+    <h1>Hol szeretnél campingezni?</h1>
+    <br>
+    <article>
+        Gyere és pihend ki a hétköznapi fáradalmakat eme csodás helyek valamelyikén! <br>
+        A mit sem sejtő barátaidat is meglepheted egy-egy különleges élménnyel! <br>
+        Nem kell mást tenned, csak kitölteni és lefoglalni a megfelelő időpontot. <br>
+    </article>
+    <br>
+    <form action="#">
+        <fieldset>
+            <legend>Választható helyek / panorámák:</legend>
+            <table tabindex="1">
+                <tr>
+                    <th><label for="csovanyos">Csóványos</label></th>
+                    <th><label for="galya-teto">Galya-tető</label></th>
+                    <th><label for="kekesteto">Kékestető</label></th>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="csovanyos">
+                            <img src="./images/Csovanyos.avif" alt="">
+                        </label>
+                    </td>
+                    <td>
+                        <label for="galya-teto">
+                            <img src="./images/Galya-teto.avif" alt="">
+                        </label>
+                    </td>
+                    <td>
+                        <label for="kekesteto">
+                            <img src="./images/Kekesteto.avif" alt="">
+                        </label>
+                    </td>
+                </tr>
+                    <th><input type="radio" name="landscape" id="csovanyos" checked></th>
+                    <th><input type="radio" name="landscape" id="galya-teto"></th>
+                    <th><input type="radio" name="landscape" id="kekesteto"></th>
+                </tr>
+            </table> 
+        </fieldset>
+        <br>
+            <label for="last-name">Vezetéknév*:</label>
+            <input type="text" name="last-name" id="last-name" tabindex="2" placeholder="Minta" required>
+        <br>
+            <label for="first-name">Keresztnév*:</label>
+            <input type="text" name="first-name" id="first-name" tabindex="3" placeholder="Béla" required> 
+        <br><br>
+        <label for="phone">Telefonszám*:</label>
+            <select name="prefix" id="prefix" tabindex="4">
+                <option value="+3620">20</option>
+                <option value="+3630">30</option>
+                <option value="+3670">70</option>
+            </select>
+            <input type="tel" id="phone" name="phone"
+                pattern="[0-9]{7}"
+                placeholder="123456789"
+                tabindex="5"
+                required>
+        <br>
+            <label for="email">Mi az email címed?*:</label>
+            <input type="email" name="email" id="email" placeholder="ezazemailcimem@mail.com" tabindex="6" required>
+        <br>
+            <label for="date">Mikor jönnétek?*:</label>
+            <input type="date" name="date" id="date" tabindex="7" required>
+        <br>
+            <label for="number">Hány fő lesz?:</label>
+            <input type="number" name="number" id="number" placeholder="1" min="1" max="16" tabindex="8">
+        <br>
+            <p>Extra szolgáltatások:</p>
+            <input type="checkbox" name="bear" id="bear" tabindex="9">
+            <label for="bear">Ébresszen egy grizli medve</label>
+            <br>
+            <input type="checkbox" name="ufo" id="ufo" tabindex="10">
+            <label for="ufo">Raboljanak el titeket az éjszaka közepén az UFO-k</label>
+            <br>
+            <input type="checkbox" name="mosquito" id="mosquito" tabindex="11">
+            <label for="mosquito">Szúnyog invázió</label>       
+        <p>A *-gal jelölt mezők kitöltése kötelező.</p>
+        <input type="submit" value="Foglalás véglegesítése" tabindex="12">
+    </form>
+</body>
+</html>

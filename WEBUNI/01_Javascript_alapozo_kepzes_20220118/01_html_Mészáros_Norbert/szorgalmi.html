@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mészáros Norbert házifeladat</title>
+</head>
+<body>
+    <header>
+        <center><h1 id="page-top">HTML elemek</h1></center>
+        <figure>
+            <a href="https://xkcd.com/722/"><img src="https://imgs.xkcd.com/comics/computer_problems.png" alt=""></a>
+           <figcaption>Computer Problems</figcaption>
+        </figure>
+
+        <nav>
+            <h2>Tartalom jegyzék</h2>
+            <ol>
+                <a href="#main-root"><li>Main Root</li></a>
+                <a href="#doc-meta"><li>Document metadata</li></a>
+                <a href="#sec-root"><li>Sectioning root</li></a>
+                <a href="#footer"><li>Content sectioning</li></a>
+                <a href="#footer"><li>Text content</li></a>
+                <a href="#footer"><li>Inline text semantics</li></a>
+                <a href="#footer"><li>Image and multimedia</li></a>
+                <a href="#footer"><li>Embedded content</li></a>
+                <a href="#footer"><li>SVG and MathML</li></a>
+                <a href="#footer"><li>Scripting</li></a>
+                <a href="#footer"><li>Demarcating edits</li></a>
+                <a href="#footer"><li>Table content</li></a>
+                <a href="#footer"><li>Forms</li></a>
+                <a href="#footer"><li>Interactive elements</li></a>
+                <a href="#footer"><li>Web Components</li></a>
+            </ol>
+        </nav>
+        <hr>
+    </header>
+    <main>
+        <section>
+            <h3 id="main-root">Main Root</h3>
+            <table border="1">
+                <tr>
+                <th>
+                    Elem
+                </th>
+                <th>
+                    Leírás
+                </th>
+                </tr>
+                <tr></tr>
+                <td>
+                    &lt;html&gt;
+                </td>
+
+                <td>
+                    A &lt;html&gt; HTML-elem a HTML-dokumentum gyökerét (legfelső szintű elemét) képviseli, ezért gyökérelemnek is nevezik. Minden más elemnek ennek az elemnek a leszármazottjainak kell lennie.
+                </td>
+                </tr>
+            </table>
+            <a href="#page-top">
+                <p>Vissza a lap tetejére</p>
+            </a>
+        </section>
+        <br>
+        <hr>
+        <section>
+            <h3 id="doc-meta">Document metadata</h3>
+            <p>A metaadatok az oldalra vonatkozó információkat tartalmazzák. Ide tartoznak a stílusokra, szkriptekre és adatokra vonatkozó információk, amelyek segítik a szoftvereket (keresőmotorok, böngészők stb.) az oldal használatában és megjelenítésében. A stílusok és szkriptek metaadatai meghatározhatók az oldalon, vagy hivatkozhatnak egy másik fájlra, amely tartalmazza ezeket az információkat.</p>
+            <table border="1">
+                <tr>
+                    <th>
+                        Elem
+                    </th>
+                    <th>
+                        Leírás
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        &lt;base&gt;
+                    </td>
+                    <td>
+                        A &lt;base&gt; HTML-elem meghatározza a dokumentumban található összes relatív URL-címhez használandó alap URL-címet. Egy dokumentumban csak egy &lt;base&gt; elem lehet.
+                        <ul>Példa:
+                            <li>Adott &lt;base href="https://example.com"&gt;</li>
+                            <li>... és ez a link: &lt;a href="#anchor"&gt;Anker&lt;/a&gt;</li>
+                            <li>...a link a https://example.com/#anchor címre mutat.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        &lt;head&gt;
+                    </td>
+                    <td>
+                        A &lt;head&gt; HTML elem gépileg olvasható információkat (metaadatokat) tartalmaz a dokumentumról, például a címét, a szkripteket és a stíluslapokat.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        &lt;link&gt;
+                    </td>
+                    <td>
+                        A &lt;link&gt; HTML elem az aktuális dokumentum és egy külső erőforrás közötti kapcsolatokat határozza meg. Ezt az elemet leggyakrabban CSS-hez való hivatkozásra használják, de többek között a webhely ikonjainak (mind a "favicon" stílusú ikonok, mind a kezdőképernyő és a mobileszközök alkalmazásainak ikonjai) létrehozására is használják.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        &lt;meta&gt;
+                    </td>
+                    <td>
+                        A &lt;meta&gt; HTML elem olyan metaadatokat képvisel, amelyeket más HTML meta-elemek, mint például a base, link, script, style vagy title, nem tudnak megjeleníteni.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        &lt;style&gt;
+                    </td>
+                    <td>
+                        A &lt;style&gt; HTML-elem egy dokumentum vagy dokumentumrész stílusinformációit tartalmazza. CSS-t tartalmaz, amelyet a &lt;style&gt; elemet tartalmazó dokumentum tartalmára alkalmaznak.
+                    </td>
+                </tr>
+                </tr>
+                <tr>
+                    <td>
+                        &lt;title&gt;
+                    </td>
+                    <td>
+                        A &lt;title&gt; HTML-elem határozza meg a dokumentum címét, amely a böngésző címsorában vagy az oldal fülén jelenik meg. Csak szöveget tartalmaz; az elemen belüli címkék figyelmen kívül maradnak.
+                    </td>
+                </tr>
+                </tr>
+            </table>
+            <a href="#page-top">
+                <p>Vissza a lap tetejére</p>
+            </a>
+        </section>
+        <br>
+        <hr>
+        <section>
+            <h3 id="sec-root"">Sectioning root</h3>
+            <table border="1">
+                <tr>
+                    <th>
+                        Elem
+                    </th>
+                    <th>
+                        Leírás
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        &lt;body&gt;
+                    </td>
+                    <td>
+                        A &lt;body&gt; HTML-elem egy HTML-dokumentum tartalmát képviseli. Egy dokumentumban csak egy &lt;body&gt; elem lehet.
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">"COLSPAN" próba</td>
+                </tr>
+            </table>
+            <a href="#page-top">
+                <p>Vissza a lap tetejére</p>
+            </a>
+        </section>
+        <br>
+        <hr>
+    </main>
+
+    <footer id="footer">
+        <center><h3>Nagy tervekkel indultam, de meguntam.</h1></center>
+        <center>
+            <h3>Remélem lesz erre gyorsabb megoldás is :D </h1>
+        </center>
+        <center>
+            <h3>Még folytatom.</h3>
+        </center>
+    </footer>
+</body>
+</html>

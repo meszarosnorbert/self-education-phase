@@ -1,0 +1,87 @@
+html {
+    /* Based on : https://css-tricks.com/snippets/css/system-font-stack/ 
+    Desccription: Defaulting to the system font of a particular operating system can boost performance because the browser doesn’t have to download any font files, it’s using one it already had. That’s true of any “web safe” font, though. The beauty of “system” fonts is that it matches what the current OS uses, so it can be a comfortable look. */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+    background-color: hsl(215, 80%, 15%);
+    color: hsl(35, 80%, 90%);
+}
+
+#title {
+    font-weight: 900;
+    text-align: center;
+    font-size: 3em;
+}
+
+#img-caption {
+    margin-top: 5px;
+    text-align: center;
+    font-size: 0.8em;
+    font-weight: 100;
+}
+
+#img-div {
+}
+
+#main {
+    max-width: 960px;
+    min-width: 480px;
+    margin: auto;
+    text-align: justify;
+    font-size: 16px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#player {
+    width: 100%;
+}
+
+p {
+    line-height: 1.5em;
+    margin: 10px;
+    padding: 10px 0;
+}
+
+article {
+    line-height: 1.5em;
+    margin: 10px;
+    padding: 10px 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+}
+
+footer {
+    max-width: 960px;
+    min-width: 480px;
+    margin: auto;
+    text-align: center;
+}
+
+button {
+    background-color: darkorange;
+    border: darkgoldenrod solid 3px;
+    width: 30%;
+    font-size: 1.2em;
+    letter-spacing: 7px;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button:hover {
+    border-radius: 15px;
+    scale: 1.2;
+    transition-duration: 2s;
+}
