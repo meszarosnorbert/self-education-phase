@@ -1,0 +1,34 @@
+#hamburger {
+    width: 400px;
+    height: 400px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    filter: grayscale(1);
+}
+
+#top-bun,
+#bottom-bun {
+    width: 100%;
+    height: 25%;
+}
+
+#top-bun {
+    border-radius: 50% 50% 10% 10%;
+}
+
+#bottom-bun {
+    border-radius: 10% 10% 20% 20%;
+}
+
+#salad {
+    width: 100%;
+    height: 25%;
+    border-radius: 5%;
+}
+
+#beef {
+    width: 100%;
+    height: 25%;
+    border-radius: 5%;
+}

@@ -1,0 +1,40 @@
+<html>
+
+<head>
+  <title>Feedback form</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="homework.js" type="module"></script>
+</head>
+
+<body>
+  <h1>Send us your feedback</h1>
+  <div class="container">
+    <p>Your opinion is important to us, please leave a few words below.
+    </p>
+    <div class="form-item">
+      <label>E-mail</label><br>
+      <input id="email" type="email">
+    </div>
+    <div>
+      <label>List for homework</label><br>
+      <input type="number" min="1" max="10" step="1" id="number" value="9">
+      <ul id="ul-list">
+          <!-- Filled by javascript -->
+      </ul>
+    </div>
+    <div class="form-item">
+      <label>Feedback</label><br>
+      <textarea id="feedback" rows="10"></textarea>
+    </div>
+    <a href="https://i.gifer.com/Wn2j.gif" target="_blank">Privacy
+      notice</a><br>
+    <button id="submit">Send</button><br>
+    <p>The form has been filled in <span id="formCounter"></span> times.</p>
+    <div id="image-container">
+      <img src="https://i.gifer.com/Wn2j.gif">
+    </div>
+  </div>
+ 
+</body>
+
+</html>

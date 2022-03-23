@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Styles.css">
+    <script src="./Javascripts/main.js" type="module"></script>
+    <title>Todo o.O</title>
+</head>
+<body>
+    <div>
+        <h1>Things I shouldn't have forgotten:</h1>
+        <input type="text" name="input-text" id="input-text" placeholder="To do or not to do..." required>
+        <input type="number" name="number" id="number" min="1" max="5" placeholder="1-5" step="1" required>
+        <button id="input-button">Add</button>
+        <ul id="not-finished"><!-- innerHTML helye --></ul>
+        <hr>
+        <ul id="finished"><!-- innerHTML helye --></ul>
+        <div id="footer">
+            <button class="order" id="increasing-order">&darr;</button>
+            <button class="order" id="decreasing-order">&uarr;</button>
+            <span id="completed">Completed: <span id="completedPercentage"></span>%</span>
+            <p>Hardest task: <span id="hardest-task"></span> --> <span id="hardest"></span></p>
+        </div>
+    </div>
+</body>
+</html>

@@ -4,65 +4,101 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
     <title>A legfontosabb JavaScript fogalmak, amelyeket a React tanulása előtt ismerni kell</title>
 </head>
 <body>
-    <nav></nav>
+    <nav>
+        <header>
+            <ul>
+                <li><a href="#Callback_Functions" class="nav-link">Callback Functions</a></li>
+                <li><a href="" class="nav-link"></a>Lorem.</li>
+                <li><a href="" class="nav-link"></a>Lorem, ipsum.</li>
+                <li><a href="" class="nav-link"></a>Lorem.</li>
+                <li><a href="" class="nav-link"></a>Lorem, ipsum.</li>
+                <li><a href="" class="nav-link"></a>Lorem.</li>
+                <li><a href="" class="nav-link"></a>Lorem, ipsum.</li>
+                <li><a href="" class="nav-link"></a>Lorem.</li>
+                <li><a href="" class="nav-link"></a>Lorem.</li>
+                <li><a href="" class="nav-link"></a>Lorem, ipsum.</li>
+                <li><a href="" class="nav-link"></a>Lorem, ipsum.</li>
+                <li><a href="" class="nav-link"></a>Lorem, ipsum.</li>
+                <li><a href="" class="nav-link"></a>Lorem, ipsum.</li>
+                <li><a href="" class="nav-link"></a>Lorem, ipsum.</li>
+            </ul>
+        </header>
+    </nav>
+    
     <main id="main-doc">
-        <div class="main-section" id="">
-            <header>Callback Functions in JavaScript</header>
-            <p></p>
+        <div class="main-section" id="Callback_Functions">
+            <header>Callback Functions</header>
+            <article>
+                <p>A callback függvény olyan függvény, amely egy másik függvény végrehajtása után kerül végrehajtásra. Általában egy másik függvény bemeneteként adják meg.</p>
+                <p>A callbackek megértése kritikus fontosságú, mivel a tömb metódusokban (például <span class="codes">map()</span>, <span class="codes">filter()</span>< stb.), <span class="codes">setTimeout()</span>, eventlistener-ekben (például click, scroll stb.) és még sok más helyen használják őket.</p>
+                <p>Íme egy példa egy " click " eventlistener-re egy callback függvénnyel, amely a gombra való kattintáskor lefut:</p>  
+                <code>
+                    <pre>
+                    //HTML
+                    &lt;button class="btn"&gt;Click Me&lt;/button&gt;
+
+                    //JavaScript
+                    const btn = document.querySelector('.btn');
+
+                    btn.addEventListener('click', () => {
+                    let name = 'John doe';
+                    console.log(name.toUpperCase())
+                    })
+                </pre>
+                </code>
+            </article>
         </div>
         <div class="main-section" id="">
-            <header>Promises in JavaScript</header>
+            <header>Promises</header>
             <p></p>
         </div>
         <div class="main-section" id="">
-            <header>Map() in JavaScript</header>
+            <header>Map()</header>
             <p></p>
         </div>
         <div class="main-section" id="">
-            <header>Filter() and Find() in JavaScript</header>
+            <header>Filter() and Find()</header>
             <p></p>
         </div>
         <div class="main-section" id="">
-            <header>Destructuring Arrays and Objects in JavaScript</header>
+            <header>Destructuring Arrays and Objects</header>
             <p></p>
         </div>
-        <div class="main-section">
-            <header>Rest and Spread Operators in JavaScript</header>
+        <div class="main-section" id="">
+            <header>Rest and Spread Operators</header>
             <p></p>
         </div>
-        <div class="main-section">
-            <header>Unique Value - Set() in JavaScript</header>
+        <div class="main-section" id="">
+            <header>Unique Value - Set()</header>
             <p></p>
         </div>
-        <div class="main-section">
-            <header>Dynamic Object keys in JavaScript</header>
+        <div class="main-section" id="">
+            <header>Dynamic Object keys</header>
             <p></p>
         </div>
-        <div class="main-section">
-            <header>reduce() in JavaScript</header>
+        <div class="main-section" id="">
+            <header>reduce()</header>
             <p></p>
         </div>
-        <div class="main-section">
-            <header>Optional chaining in JavaScript</header>
+        <div class="main-section" id="">
+            <header>Optional chaining</header>
             <p></p>
         </div>
-        <div class="main-section">
-            <header>Fetch API & Errors in JavaScript</header>
+        <div class="main-section" id="">
+            <header>Fetch API & Errors</header>
             <p></p>
         </div>
-        <div class="main-section">
-            <header>Async/Await in JavaScript</header>
+        <div class="main-section" id="async_await">
+            <header>Async/Await</header>
             <p></p>
         </div>
-        <div class="main-section">
+        <div class="main-section" id="conclusion">
             <header>Conclusion</header>
             <p></p>
-        </div>
-        <div class="main-section">
-            <header>vége</header>
         </div>
     </main>
 </body>
